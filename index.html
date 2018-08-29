@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+    <title>SQM Fund</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script type="text/javascript">
+      function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'block') {
+          e.style.display = 'none';
+        } else {
+          e.style.display = 'block';
+        }
+      }
+    </script>
+    <noscript>
+      <link rel="stylesheet" href="css/skel-noscript.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-desktop.css" />
+    </noscript>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="nav">
+      <ul class="container">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home -->
+    <div class="wrapper wrapper-style1 wrapper-first">
+      <article class="container" id="home">
+        <div class="row">
+          <img src="images/logo.png" alt="SQM Fund Logo" style="width: 30%; float: center; padding-bottom: 50px;">
+	        <br><br><br>
+          <div style="float: center; width:70%;" class="-2u">
+            <header>
+              <h2>Hi, we are SQM Fund.</h2>
+            </header>
+            <p>
+	      SqmFund is the World's first community based property investment fund. With our innovated financial model, investors can get their asset doubled 2x faster than traditional model.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Contact -->
+    <div class="wrapper wrapper-style4">
+      <article id="contact" class="container small">
+        <header>
+          <h2>Want to discuss? Get in touch!</h2>
+          <span>You can reach us via email: <a href="mailto:hello@sqmfund.com">hello@sqmfund.com</a></span>
+        </header>
+        <div class="row">
+          <div class="12u">
+            <div align='center'>
+              &copy; 2018 SQM Fund <br>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
